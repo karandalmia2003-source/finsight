@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { runStressTest } from "../../../lib/claude";
+import { runStressTest } from "../../../lib/ai";
 
 export const runtime = "nodejs";
 export const maxDuration = 60;
