@@ -22,7 +22,7 @@ export default function StressTest({ doc, onRun, isRunning, error }) {
       </div>
 
       <p className="text-sm text-subtle leading-relaxed">
-        Type a "what if" assumption and Claude will reason through the bottom-line impact using
+        Type a "what if" assumption and FinSight's AI will reason through the bottom-line impact using
         this document's actual figures — e.g. "what if gross margin drops 300bps" or "revenue
         grows 10% slower than projected."
       </p>
