@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { chatWithDocuments } from "../../../lib/claude";
+import { chatWithDocuments } from "../../../lib/ai";
 
 export const runtime = "nodejs";
 export const maxDuration = 60;
