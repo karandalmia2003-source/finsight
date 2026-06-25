@@ -286,7 +286,7 @@
         <span class="eyebrow">Welcome to FinSight</span>
         <h2>Turn financial PDFs into instant clarity</h2>
         <p>Upload a 10-K, earnings release, P&amp;L, or investor update to generate a structured
-          brief and a live dashboard — powered by Claude.</p>
+          brief and a live dashboard — powered by AI.</p>
         <button class="cta-btn" id="cta-upload">Upload a Document</button>
       </div>
     </section>
@@ -450,7 +450,7 @@
           <h3>Analyzing NVDA Q4 2024 Earnings.pdf</h3>
           <div class="proc-step" id="step-1"><span class="dot"></span><span>Parsing PDF</span></div>
           <div class="proc-step" id="step-2"><span class="dot"></span><span>Extracting metrics</span></div>
-          <div class="proc-step" id="step-3"><span class="dot"></span><span>Running Claude analysis</span></div>
+          <div class="proc-step" id="step-3"><span class="dot"></span><span>Running AI analysis</span></div>
           <div class="proc-step" id="step-4"><span class="dot"></span><span>Building brief</span></div>
         </div>
       </div>
@@ -763,8 +763,8 @@
           processingOverlay.classList.add('show');
 
           // ---- Scene 3: Processing ----
-          await setCaption('FinSight sends the PDF straight to <b>Claude</b> for structured extraction and analysis.');
-          var stepLabels = ['Parsing PDF', 'Extracting metrics', 'Running Claude analysis', 'Building brief'];
+          await setCaption('FinSight sends the PDF straight to its <b>AI engine</b> for structured extraction and analysis.');
+          var stepLabels = ['Parsing PDF', 'Extracting metrics', 'Running AI analysis', 'Building brief'];
           for (var i = 0; i < steps.length; i++){
             if (aborted(token)) return resolveTour();
             steps[i].classList.add('active');
@@ -800,7 +800,7 @@
           await sleep(1500, token); if (aborted(token)) return resolveTour();
           u4c();
 
-          await setCaption('<b>2. Risks</b> — the top three flags Claude found in the filing.');
+          await setCaption('<b>2. Risks</b> — the top three flags the AI found in the filing.');
           await moveCursorToEl(secRisks, 750, token); if (aborted(token)) return resolveTour();
           var u4d = highlight(secRisks);
           await sleep(1500, token); if (aborted(token)) return resolveTour();
