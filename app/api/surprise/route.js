@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { detectEarningsSurprise } from "../../../lib/claude";
+import { detectEarningsSurprise } from "../../../lib/ai";
 
 export const runtime = "nodejs";
 export const maxDuration = 60;
