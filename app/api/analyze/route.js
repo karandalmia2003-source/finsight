@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { extractFinancialData, generateBrief } from "../../../lib/claude";
+import { extractFinancialData, generateBrief } from "../../../lib/ai";
 
 export const runtime = "nodejs";
 export const maxDuration = 60;
